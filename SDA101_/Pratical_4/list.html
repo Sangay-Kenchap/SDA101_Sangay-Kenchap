@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    ol.custom-counter {
+      counter-reset: event-counter;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ol.custom-counter > li {
+      counter-increment: event-counter;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    ol.custom-counter > li::before {
+      content: "Event " counter(event-counter) ": ";
+      font-weight: bold;
+      color: #2a7ae2;
+    }
+
+    ol.custom-counter > li:hover {
+      background-color: #e0f0ff;
+      color: #000;
+    }
+
+    ul.event-details {
+      list-style-type: "🔹 ";
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    ul.event-details li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>College Events</h1>
+
+  <ol class="custom-counter">
+    <li>
+      <ul class="event-details">
+        <li><strong>Name:</strong> welcome show</li>
+        <li><strong>Time:</strong> 10:00 AM - 2:00 PM</li>
+        <li><strong>Location:</strong>convention hall</li>
+      </ul>
+    </li>
+    <li>
+      <ul class="event-details">
+        <li><strong>Name:</strong> Briefing</li>
+        <li><strong>Time:</strong> 5:00 PM - 9:00 PM</li>
+        <li><strong>Location:</strong> Indoor Basketball court</li>
+      </ul>
+    </li>
+    <li>
+      <ul class="event-details">
+        <li><strong>Name:</strong> Intro night</li>
+        <li><strong>Time:</strong> 4:00 PM - 10:00 PM</li>
+        <li><strong>Location:</strong> Mess</li>
+      </ul>
+    </li>
+    <li>
+      <ul class="event-details">
+        <li><strong>Name:</strong> Tag night</li>
+        <li><strong>Time:</strong> 5:00 PM - 9:00 PM</li>
+        <li><strong>Location:</strong> Mess</li>
+      </ul>
+    </li>
+    <li>
+      <ul class="event-details">
+        <li><strong>Name:</strong> Return show</li>
+        <li><strong>Time:</strong> 6:00 PM - 8:00 PM</li>
+        <li><strong>Location:</strong> Convention hall</li>
+      </ul>
+    </li>
+  </ol>
+
+</body>
+</html>

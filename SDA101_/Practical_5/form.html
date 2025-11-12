@@ -1,0 +1,96 @@
+<form action="/submit-form" method="post">
+  <!-- Form elements go here -->
+</form>
+<!-- The 'action' attribute specifies where to send the form data when submitted -->
+<!-- The 'method' attribute specifies the HTTP method to use (usually "get" or "post") -->
+<form action="/submit-form" method="post">
+  <!-- Form title -->
+  <h2>Registration Form</h2>
+  
+  <!-- Text input for full name -->
+  <!-- The 'for' attribute of <label> should match the 'id' of the input it's associated with -->
+  <label for="fullname">Full Name:</label>
+  <!-- 'required' attribute makes this field mandatory -->
+  <input type="text" id="fullname" name="fullname" required><br><br>
+  
+   <!-- Email input -->
+  <label for="Student ID">Student ID:</label>
+  <input type="Student ID" id="Student ID" name="Student ID" required><br><br>
+
+  <!-- Email input -->
+  <label for=" College email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <!-- Phone no input -->
+  <label for="Phone no">Phone no:</label>
+  <input type="Phone no" id="Phone no" name="Phone no" required><br><br>
+  
+<!-- Dropdown menu for Block/Buildling Name -->
+  <label for="Block/Buildling Name">Block/Buildling Name:</label>
+  <select id="Block/Buildling Name" name="Block/Buildling Name">
+    <!-- Each <option> represents a choice in the dropdown -->
+    <option value="Block A">Block A</option>
+    <option value="Block B">Block B</option>
+    <option value="Block C">Block C</option>
+    <option value="Block F">Block F</option>
+    <option value="RK A">RK A</option>
+    <option value="RK B">RK B</option>
+  </select><br><br>
+  <!-- Room Number -->
+  <label for="room">Room Number:</label>
+  <input
+    type="number"
+    id="room"
+    name="room"
+    min="100"
+    max="999"
+    placeholder="Room number (e.g., 205)"
+    required
+  />
+
+  <!-- Floor Number -->
+  <label for="floor">Floor Number:</label>
+  <input
+    type="number"
+    id="floor"
+    name="floor"
+    min="1"
+    max="10"
+    placeholder="Floor number"
+    required
+  />
+<!-- Dropdown menu for Issue type -->
+  <label for="Issue type">Issue type:</label>
+  <select id="Issue type" name="Issue type">
+    <!-- Each <option> represents a choice in the dropdown -->
+    <option value="electrical">electrical</option>
+    <option value="Plumbing">Plumbing</option>
+    <option value="Furniture">Furniture</option>
+    <option value="Infrastructure">Infrastructure</option>
+    <option value="Cleaning">Cleaning</option>
+    <option value="Others">Others</option>
+  </select><br><br>
+
+  <!-- Radio buttons for Issue priority/Urgency selection -->
+  <p>Issue priority/Urgency:</p>
+  <!-- Radio buttons with the same 'name' form a group; only one can be selected -->
+  <input type="radio" id="Emergency (Immediate attention required)" name="Issue priority/Urgency" value="Emergency (Immediate attention required)">
+  <label for="Emergency (Immediate attention required)">Emergency (Immediate attention required)</label><br>
+  <input type="radio" id="High (Within 24 hours)" name="Issue priority/Urgency" value="High (Within 24 hours)">
+  <label for="High (Within 24 hours)">High (Within 24 hours)</label><br>
+  <input type="radio" id="Medium (Within 3 days)" name="Issue priority/Urgency" value="Medium (Within 3 days)">
+  <label for="Medium (Within 3 days)">Medium (Within 3 days)</label><br>
+ <input type="radio" id="Low(Within a week)" name="Issue priority/Urgency" value="Low(Within a week)">
+  <label for="Low(Within a week)">Low(Within a week)</label><br><br>
+  
+<label for="Issue description">Issue description:</label><br>
+  <!-- 'rows' and 'cols' attributes set the initial size of the textarea -->
+  <textarea id="bio" name="bio" rows="5" cols="50"></textarea><br><br>
+  
+  <!-- Submit button to send the form data -->
+  <input type="submit" value="Submit">
+</form>
+    
+  
+  
+ 
